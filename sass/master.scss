@@ -1,0 +1,65 @@
+@import './modules/hover.scss';
+@import './modules/_lightbox.scss';
+@import './mediaQueries/_home.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activePop{
+    transform: scale(1);
+}
+
+.activeOverlay{
+    background: lightgrey;
+    pointer-events: all;
+}
+
+.mainCon
+{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+
+    padding: 25px;
+    background-color: #fff;
+}
+
+.blurBG{
+    filter: blur(5px);
+    pointer-events: all;
+}
+
+.user-section{
+    justify-self: center;
+    align-self: center;
+}
+
+.user-section img{
+    width: 450px;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 5%;
+
+    border: 3px solid darkslategrey;
+}
+
+.title{
+    justify-self: end;
+    align-self: center;
+}
+
+.title p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    // padding-left: 30px;
+
+    // padding-right: 150px;
+    color: darkslategrey;
+}
+
