@@ -2,7 +2,6 @@
 
     const imgSelector = document.querySelectorAll('.user-section img'),
         closeButton = document.querySelectorAll('[data-close-button]'),
-        overlay = document.querySelector('.overlay'),
         imagePop = document.querySelector('.lightbox .imgSection img'),
         blurBG =document.querySelector('.mainCon');
 
