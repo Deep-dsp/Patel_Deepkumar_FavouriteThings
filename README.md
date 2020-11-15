@@ -8,7 +8,7 @@ This project will let you know about my three favourite things and it is class p
 
 Here is the roadmap which will give you insights about how I plan and manage to do this work.
 
-[My Favourite Things Roadmap](https://https://docs.google.com/document/d/149aKOCXO_Xqa3CYuZO5dmQE46S6XSHEg304Gv2pDmkw/edit)
+[My Favourite Things Roadmap](https://docs.google.com/document/d/149aKOCXO_Xqa3CYuZO5dmQE46S6XSHEg304Gv2pDmkw/edit?usp=sharing)
 
 ### Languages Used To Create Web Page:
 

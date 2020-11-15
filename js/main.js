@@ -2,13 +2,6 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
 
 (() => {
 
-    const imgSelector = document.querySelectorAll('.user-section img'),
-        closeButton = document.querySelectorAll('[data-close-button]'),
-        imagePop = document.querySelector('.lightbox .imgSection img'),
-        blurBG =document.querySelector('.mainCon');
-
-
-
         console.log('loaded');
     
         function popErrorBox(message) {
@@ -48,6 +41,13 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
 
 
 
+        // const imgSelector = document.querySelectorAll('.user-section img'),
+        // closeButton = document.querySelectorAll('[data-close-button]'),
+        // imagePop = document.querySelector('.lightbox .imgSection img'),
+        // blurBG =document.querySelector('.mainCon');
+
+        // let tempImg = document.querySelector('.user  img');
+
 
 
     // light Box Work
@@ -56,7 +56,7 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     //     console.log("change Image");
     // }
 
-    // function lightBox(modal){
+    // function openLightBox(modal, data){
     //     if(modal == null) return;
     //     modal.classList.add('activePop');
     //     blurBG.classList.add('blurBG');
