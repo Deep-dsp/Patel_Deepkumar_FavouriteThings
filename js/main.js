@@ -12,9 +12,12 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
             // test for an ID
             if(!event.target.id){ return }
     
-            fetchData(`./includes/index.php?id=${event.target.id}`).then(data => console.log(data)).catch(err => console.log(err));
+            // fetchData(`./includes/index.php?id=${event.target.id}`).then(data => console.log(data)).catch(err => console.log(err));
+            fetchData(`./includes/index.php?id=${event.target.id}`).then(data => openLightBox(data)).catch(err => console.log(err));
         }
-    
+
+
+
         function renderPortfolioThumbnails(thumbs)
         {
     
@@ -56,28 +59,31 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     //     console.log("change Image");
     // }
 
-    // function openLightBox(modal, data){
-    //     if(modal == null) return;
-    //     modal.classList.add('activePop');
-    //     blurBG.classList.add('blurBG');
-    // }
+    const modal = document.querySelector("#modal");
+    const closeButton = document.querySelectorAll('[data-close-button]');
 
-    // function closeBox(modal)
-    //   {
-    //     if(modal == null) return;
-    //     modal.classList.remove('activePop');
-    //     blurBG.classList.remove('blurBG');
-    //   }
+    function openLightBox(data){
+        if(modal == null) return;
+        modal.classList.add('activePop');
+        // blurBG.classList.add('blurBG');
+    }
+
+    function closeBox(data)
+      {
+        if(modal == null) return;
+        modal.classList.remove('activePop');
+        // blurBG.classList.remove('blurBG');
+      }
 
     // imgSelector.forEach(img => img.addEventListener('click', function(){
     //     const modal = document.querySelector(img.dataset.modal);
     //     lightBox(modal);
     //   }));
 
-    //   closeButton.forEach(button => button.addEventListener('click', function(){
-    //     const modal = button.closest('.lightbox');
-    //     closeBox(modal);
-    //   }));
+      closeButton.forEach(button => button.addEventListener('click', function(){
+        const modal = button.closest('.lightbox');
+        closeBox(modal);
+      }));
 
     //   imgSelector.forEach(anim => anim.addEventListener("click", changeImage));
 
