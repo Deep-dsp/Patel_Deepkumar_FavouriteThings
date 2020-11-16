@@ -2,6 +2,12 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
 
 (() => {
 
+    const modal = document.querySelector("#modal");
+    const closeButton = document.querySelectorAll('[data-close-button]'),
+            popImage = document.querySelector(".imgSection img"),
+            name = document.querySelector(".content .name p"),
+            about = document.querySelector(".about p");
+
         console.log('loaded');
     
         function popErrorBox(message) {
@@ -59,13 +65,22 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     //     console.log("change Image");
     // }
 
-    const modal = document.querySelector("#modal");
-    const closeButton = document.querySelectorAll('[data-close-button]');
 
     function openLightBox(data){
         if(modal == null) return;
         modal.classList.add('activePop');
-        // blurBG.classList.add('blurBG');
+        
+        changeContent(data);
+    }
+
+    function changeContent(data){
+
+        for(let user in data){
+            popImage.src = `images/${data[user].image}`;
+            name.textContent = data[user].name;
+            about.textContent = data[user].about;
+        }
+
     }
 
     function closeBox(data)
