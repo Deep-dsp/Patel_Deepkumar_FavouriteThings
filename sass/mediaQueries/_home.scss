@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1000px)
+{
+    .mainCon
+    {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+
+        padding: 25px;
+    
+    }
+
+    .user-section{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .user-section img{
+        margin-top: 20px;
+    }
+}

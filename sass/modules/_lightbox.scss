@@ -1,0 +1,77 @@
+.lightbox{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+   transform: translate(-50px, -50px);
+
+   
+   margin: auto;
+   width: 50vh;
+   height: 85vh;
+   background-color: lightgray;
+   padding: 15px;
+   border-radius: 20px;
+
+   transform: scale(0);
+   transition: 0.3s ease;
+
+   button{
+       display: flex;
+       justify-content: flex-end;
+       margin: 20px 0;
+       margin-left: 350px;
+
+       background: none;
+       border: none;
+       font-size: 30px;
+   }
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name p{
+        font-family: cursive;
+        font-size: 2em;
+}
+
+
+.imgSection{
+    flex: 1;
+
+}
+.imgSection img{
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 5px 5px lightgreen;
+}
+
+.content{
+    flex: 3;
+    margin-top: 10px;
+    margin-left: 20px;
+    // width: 40%;
+}
+
+.about{
+    margin-top: 20px;
+}
+
+.about p{
+    font-family: monospace;
+    font-size: 1em;
+    line-height: 20px;
+}

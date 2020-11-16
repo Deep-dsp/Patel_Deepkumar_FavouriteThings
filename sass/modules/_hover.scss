@@ -1,0 +1,14 @@
+.user-section img{
+    transition: 0.5s ease;
+}
+
+.user-section img:hover{
+
+    border: 5px solid skyblue;
+    transform: scale(0.85);
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
